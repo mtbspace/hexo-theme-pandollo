@@ -4,7 +4,7 @@ mixin forList()
     .pagination
         if page.prev
             a.pagination__link.pagination__prev(href=url_for(prev))
-                != __('prev')
+                != __('previous')
         if page.next
             a.pagination__link.pagination__next(href=url_for(next))
                 != __('next')
@@ -15,7 +15,7 @@ mixin forPost()
     .pagination
         if prev
             a.pagination__link.pagination__prev(href=url_for(prev))
-                != __('prev_post')
+                != __('previous')
         if next
             a.pagination__link.pagination__next(href=url_for(next))
-                != __('next_post')
+                != __('next')
